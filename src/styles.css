@@ -1,0 +1,20 @@
+:root{
+    --primary-color:#131518; /* Very Dark Blue */
+    --secondary-color:#262E38; /* Dark Blue */
+    --secondary-color:#969FAD; /* Light Gray */
+    --tertiary-color:#FC7614; /* Orange */
+    --white:#FFFFFF; /* White */
+    --font-size:16px;
+    --primary-font:;
+}
+
+/* 
+Black Gradient // Radial
+232A34
+181E27
+*/
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
