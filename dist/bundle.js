@@ -110,6 +110,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/DOMLoader.js":
+/*!**************************!*\
+  !*** ./src/DOMLoader.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   loadSite: () => (/* binding */ loadSite)\n/* harmony export */ });\n/* harmony import */ var _helpers_js_helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers.js/helpers */ \"./src/helpers.js/helpers.js\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\n\n\n\n// const buttonCreator = new ElementCreator('button', { id: 'home-button', class: 'btn' }, 'Home');\n// const homeButton = buttonCreator.createElement();\n\n// const appender = new ElementAppender(document.body, homeButton);\n// appender.appendElements();\n\n\nfunction loadContainers(){\n    if(document.getElementById('content') === null){\n        // Create an instance of ElementCreator for a <main> element with ID 'content'\n        const contentCreator = new _helpers_js_helpers__WEBPACK_IMPORTED_MODULE_0__.ElementCreator('main', { id: 'content' });\n        \n        // Generate the actual DOM element\n        const contentElement = contentCreator.createElement();\n        \n        // Create an instance of ElementAppender to append the <main> element to <body>\n        const appender = new _helpers_js_helpers__WEBPACK_IMPORTED_MODULE_0__.ElementAppender(document.body, contentElement);\n        \n        // Append the element to the DOM\n        appender.appendElements();\n    }\n}\n\n\nfunction loadContent(){\n\n}\n\n\n\n\n// LOAD DOM CONTENT\n// CALLS THE ABOVE FUNCTIONS\nfunction loadSite(){\n    document.addEventListener('DOMContentLoaded', () => {\n        loadContainers()\n    })    \n}\n\n\n\n\n//# sourceURL=webpack://interactive-rating-component/./src/DOMLoader.js?");
+
+/***/ }),
+
 /***/ "./src/helpers.js/helpers.js":
 /*!***********************************!*\
   !*** ./src/helpers.js/helpers.js ***!
@@ -126,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _helpers_js_helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers.js/helpers */ \"./src/helpers.js/helpers.js\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\n\n\nconst buttonCreator = new _helpers_js_helpers__WEBPACK_IMPORTED_MODULE_0__.ElementCreator('button', { id: 'home-button', class: 'btn' }, 'Home');\nconst homeButton = buttonCreator.createElement();\n\nconst appender = new _helpers_js_helpers__WEBPACK_IMPORTED_MODULE_0__.ElementAppender(document.body, homeButton);\nappender.appendElements();\n\n\n//# sourceURL=webpack://interactive-rating-component/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _helpers_js_helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers.js/helpers */ \"./src/helpers.js/helpers.js\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _DOMLoader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DOMLoader */ \"./src/DOMLoader.js\");\n\n\n\n\n(0,_DOMLoader__WEBPACK_IMPORTED_MODULE_2__.loadSite)()\n\n//# sourceURL=webpack://interactive-rating-component/./src/index.js?");
 
 /***/ })
 
